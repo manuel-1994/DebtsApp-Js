@@ -1,0 +1,7 @@
+.section-newDebt{
+    display: flex;
+    flex-direction: column;
+    width: 452px;
+    height: 320px;
+}
+
