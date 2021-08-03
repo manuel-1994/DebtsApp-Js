@@ -1,5 +1,5 @@
 import { listUserDebts } from '../../components';
-import { id } from '../newDebt/newDebt.controller';
+/* import { id } from '../newDebt/newDebt.controller'; */
 import view from './userDebts.html';
 
 

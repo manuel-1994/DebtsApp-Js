@@ -1,0 +1,12 @@
+.login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section-home{
+    display: flex;
+    flex-direction: column;
+}
