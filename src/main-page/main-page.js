@@ -1,29 +1,30 @@
-import view from "./main-page.html"
-import './main-page.css'
-import { header, sidebar } from "../components"
-import {secHome} from "../pages"
-import { router } from "../router/index.routes"
+import view from "./main-page.html";
+import "./main-page.css";
+import { header } from "../components";
+import { router } from "../router/index.routes";
 
-const body = document.body
+const body = document.body;
 
 const createHtml = () => {
-    const div = document.createElement("div");
-    div.innerHTML = view;
-    body.insertAdjacentElement('afterbegin', div.firstElementChild)
-}
+  body.innerHTML = "";
+  const div = document.createElement("div");
+  div.innerHTML = view;
+  body.insertAdjacentElement("afterbegin", div.firstElementChild);
+};
 
-const delSec = ()=>{
-    const main = document.querySelector('.main-content')
-    main.lastElementChild.remove()
-}
+const delSec = () => {
+  const main = document.querySelector(".main-content");
+  while (main.firstChild) {
+    main.firstChild.remove();
+  }
+};
 
-export const mainPage= () =>{
-    createHtml()
-    header()
-    sidebar()
-    secHome()
-    window.subRoute=(route)=>{
-        delSec()
-        router(null ,route)
-    }
-}
+export const mainPage = () => {
+  createHtml();
+  header();
+
+  window.subRoute = (route) => {
+    delSec();
+    router(null, route);
+  };
+};

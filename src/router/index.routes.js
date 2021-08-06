@@ -1,13 +1,13 @@
-import { secDebts, secHome } from "../pages"
-
-
+import { mainPage } from "../main-page/main-page"
+import { secDebts, secHome, secLogin } from "../pages"
 export const router = (route, subRoute) =>{
-    if (route){
+    if (route || route=== ''){
         switch (route) {
-            case (location.hash && '#/'):
-                return 
+            case (location.hash && '/'):
+                return secLogin()
             default:
-                return
+                mainPage()
+                return router(null, route)
         }
     }else{
         switch(subRoute){
@@ -15,6 +15,8 @@ export const router = (route, subRoute) =>{
                 return secHome()
             case '#/debts':
                 return secDebts()
+            default:
+                return secLogin()
         }
     }
 }
