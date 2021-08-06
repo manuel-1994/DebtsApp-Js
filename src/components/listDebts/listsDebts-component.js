@@ -2,15 +2,11 @@ import view from "./listDebts.html";
 import { debtsList } from "../../";
 
 
-export const listDebts = () => {
+const createHtml = () => {
+  const divTable = document.querySelector('.table-container')
   const div = document.createElement("div");
   div.innerHTML = view;
   const tbody = div.querySelector("tbody");
-
-  window.link = (id) =>{
-    const baseUrl= "#/deudas"
-    window.location.href = `${baseUrl}/${id}`
-  }
 
   const { debts } = debtsList;
   Object.values(debts).forEach((user) => {
@@ -21,5 +17,13 @@ export const listDebts = () => {
   </tr>`;
   });
 
-  return div.firstElementChild;
+  divTable.append(div.firstElementChild)
 };
+
+export const listDebts = ()=>{
+  createHtml()
+  window.link = (id) =>{
+    const baseUrl= "#/deudas"
+    window.location.href = `${baseUrl}/${id}`
+  }
+}
