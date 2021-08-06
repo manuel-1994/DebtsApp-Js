@@ -8,7 +8,7 @@ export const listDebts = () => {
   const tbody = div.querySelector("tbody");
 
   window.link = (id) =>{
-    const baseUrl= "#/debts"
+    const baseUrl= "#/deudas"
     window.location.href = `${baseUrl}/${id}`
   }
 
