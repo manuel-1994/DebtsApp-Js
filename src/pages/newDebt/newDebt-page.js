@@ -2,13 +2,14 @@ import "./newDebt.css";
 import view from "./newDebt.html";
 import { Debts } from "../../classes";
 import { debtsList } from "../..";
-import { listUserDebts, sidebar } from "../../components";
+/* import { header, sidebar } from "../../components"; */
 
 const body = document.body;
 let id, form, txtInput;
 const createHtml = () => {
   const main = document.createElement("main");
   main.innerHTML = view;
+  main.insertAdjacentElement('afterbegin', header('Nueva deuda'))
   txtInput = main.querySelectorAll("input");
   form = main.querySelector("form");
   return body.append(main);

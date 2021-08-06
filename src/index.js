@@ -2,14 +2,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "./styles.css";
 import  {router} from './router/index.routes.js'
 import { DebtsList  } from "./classes";
+import { mainPage } from './main-page/main-page';
+
+
 
 
 export const debtsList = new DebtsList()
 
-router(window.location.hash)
-window.addEventListener('hashchange', ()=>{
-    router(window.location.hash)
-})
+
+window.init=()=>{
+    mainPage()
+    window.route=(route)=>{
+        router(route)
+    }
+}
 
 
 

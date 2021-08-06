@@ -7,12 +7,15 @@ main{
     width: 100%;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
+
+
+
+.header{
+    width: 20%;
+    text-align: center;
 }
 
-.header-img{
+.aside-img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -20,8 +23,8 @@ header{
 
 
 .side{
-    width: 20%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .side-nav{

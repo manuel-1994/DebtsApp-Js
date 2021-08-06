@@ -1,20 +1,18 @@
 import './debts.css'
 import view from './debts.html'
-import {listDebts, sidebar} from '../../components'
+import {listDebts} from '../../components'
 
 
-const body = document.body
+
 const createHtml = () =>{
-    const main = document.createElement('main')
-    main.innerHTML= view
-    const divTable = main.querySelector('.table-container')
+    const main = document.querySelector('.main-content')
+    const div = document.createElement('div')
+    div.innerHTML= view
+    const divTable = div.querySelector('.table-container')
     divTable.append(listDebts())
-
-    return body.append(main)
+    main.append(div.firstElementChild)
 }
 
-export const sectionDebts = () => {
-    body.innerHTML= ''
-    sidebar()
+export const secDebts = () => {
     createHtml()
 }

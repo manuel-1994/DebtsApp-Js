@@ -7,6 +7,11 @@ export const listDebts = () => {
   div.innerHTML = view;
   const tbody = div.querySelector("tbody");
 
+  window.link = (id) =>{
+    const baseUrl= "#/debts"
+    window.location.href = `${baseUrl}/${id}`
+  }
+
   const { debts } = debtsList;
   Object.values(debts).forEach((user) => {
     tbody.innerHTML += `  <tr data-id=${user.name}>
