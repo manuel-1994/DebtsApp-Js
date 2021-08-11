@@ -1,4 +1,5 @@
-import view from "./header.html";
+import view from "./menu.html";
+import './menu.css'
 
 
 const createHtml = () => {
@@ -9,6 +10,10 @@ const createHtml = () => {
   return container.insertAdjacentElement('afterbegin', div.firstElementChild)
 };
 
-export const header = () => {
+const events = () =>{
+
+}
+
+export const menu = () => {
   createHtml()
 }

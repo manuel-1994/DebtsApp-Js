@@ -1,6 +1,6 @@
 import view from "./main-page.html";
 import "./main-page.css";
-import { header } from "../components";
+import { menu, sidebar } from "../components";
 import { router } from "../router/index.routes";
 
 const body = document.body;
@@ -14,15 +14,13 @@ const createHtml = () => {
 
 const delSec = () => {
   const main = document.querySelector(".main-content");
-  while (main.firstChild) {
-    main.firstChild.remove();
-  }
+  main.lastChild.remove()
 };
 
 export const mainPage = () => {
   createHtml();
-  header();
-
+  menu();
+  sidebar()
   window.subRoute = (route) => {
     delSec();
     router(null, route);

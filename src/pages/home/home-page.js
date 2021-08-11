@@ -1,4 +1,3 @@
-import { sidebar } from '../../components';
 import './home.css'
 import view from "./home.html"
 
@@ -10,6 +9,5 @@ const createHtml = () => {
 }
 
 export const secHome = () => {
-    sidebar('home')
     createHtml()
 }

@@ -1,6 +1,6 @@
 import './debts.css'
 import view from './debts.html'
-import {listDebts, sidebar} from '../../components'
+import {listDebts} from '../../components'
 
 
 
@@ -12,7 +12,6 @@ const createHtml = () =>{
 }
 
 export const secDebts = () => {
-    sidebar('Deudas pendientes')
     createHtml()
     listDebts()
 }

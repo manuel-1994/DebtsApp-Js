@@ -1,6 +1,6 @@
 import view from "./debtors.html"
 import './debtors.css'
-import { listDebtors, sidebar } from "../../components"
+import { listDebtors} from "../../components"
 
 const createHtml = () =>{
     const main = document.querySelector('.main-content')
@@ -10,7 +10,6 @@ const createHtml = () =>{
 }
 
 export const secDebtors = () => {
-    sidebar('Deudores pendientes')
     createHtml()
     listDebtors()
 }

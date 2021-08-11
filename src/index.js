@@ -5,8 +5,6 @@ import { DebtsList  } from "./classes";
 
 
 
-
-
 export const debtsList = new DebtsList()
 
 

@@ -1,0 +1,27 @@
+.menu{
+    width: 20%;
+    text-align: center;
+}
+
+.menu-nav-link{
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    color: #212529;
+    width: 100%;
+}
+
+.menu-nav-link:hover{
+    background-color: #212529;
+    color: white;
+}
+
+.menu-text{
+    padding: .5rem 1rem ;
+}
+.menu-item-content{
+    
+    
+    width: 100%;
+    margin: 0 2rem;
+}
