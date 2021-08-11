@@ -11,7 +11,6 @@ const createHtml = () => {
 };
 
 const events = () =>{
-
 }
 
 export const menu = () => {

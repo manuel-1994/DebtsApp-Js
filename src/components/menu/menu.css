@@ -1,6 +1,11 @@
+/* menu expandido */
 .menu{
-    width: 20%;
-    text-align: center;
+    width: 16%;
+    height: 100%;
+    position: fixed;
+    text-align: center; 
+    top: 0;
+    left: 0;
 }
 
 .menu-nav-link{
@@ -20,8 +25,23 @@
     padding: .5rem 1rem ;
 }
 .menu-item-content{
-    
-    
     width: 100%;
     margin: 0 2rem;
 }
+
+/* Menu collapsado */
+
+.menu.collapsed{
+    width: 5%;
+}
+
+
+.menu.collapsed .menu-nav-link{
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.menu.collapsed .menu-text{
+    display: none;
+}
+

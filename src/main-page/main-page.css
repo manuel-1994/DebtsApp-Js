@@ -2,3 +2,11 @@
     display: flex;
     width: 100%;
 }
+
+.main-content{
+    margin-left: 16%;
+}
+
+.main-content.collapsed{
+    margin-left: 5%
+}
