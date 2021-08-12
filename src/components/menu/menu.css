@@ -3,17 +3,40 @@
     width: 16%;
     height: 100%;
     position: fixed;
-    text-align: center; 
     top: 0;
     left: 0;
 }
 
-.menu-nav-link{
+.menu-nav-link, .menu-logo-content{
     display: flex;
     padding-left: 2rem;
     align-items: center;
     color: #212529;
-    width: 100%;
+}
+
+/* logotipo */
+.menu-logo-content{
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+.menu-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu-title{
+    font-family: nunito;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* menú */
+
+.menu-nav{
+    margin-top: .5rem;
 }
 
 .menu-nav-link:hover{
@@ -25,7 +48,6 @@
     padding: .5rem 1rem ;
 }
 .menu-item-content{
-    width: 100%;
     margin: 0 2rem;
 }
 
@@ -37,11 +59,12 @@
 
 
 .menu.collapsed .menu-nav-link{
+    padding: 1.2rem 1rem;
     justify-content: center;
-    padding-left: 1rem;
 }
 
-.menu.collapsed .menu-text{
+
+.menu.collapsed .menu-text, .menu.collapsed .menu-title{
     display: none;
 }
 
