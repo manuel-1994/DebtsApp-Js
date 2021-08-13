@@ -6,7 +6,11 @@
     height: 100%;
 }
 
-.section-home{
+.login-content{
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 250px;
+    margin: 0 2rem;
+    border-radius: 7%;
 }

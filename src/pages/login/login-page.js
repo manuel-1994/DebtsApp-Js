@@ -1,14 +1,12 @@
 import "./login.css";
 import view from "./login.html";
 
-const body = document.body;
+const app = document.querySelector('.app')
 
 const createHtml = () => {
-  body.innerHTML=''
   const div = document.createElement("div")
-  div.className= 'main-container'
   div.innerHTML = view;
-  return body.insertAdjacentElement("afterbegin", div);
+  app.insertAdjacentElement("afterbegin", div.firstElementChild);
 };
 
 export const secLogin = () =>{

@@ -3,13 +3,14 @@ import "./main-page.css";
 import { menu, sidebar } from "../components";
 import { router } from "../router/index.routes";
 
-const body = document.body;
 
+
+const app = document.querySelector(".app");
 const createHtml = () => {
-  body.innerHTML = "";
+  /* app.innerHTML = ""; */
   const div = document.createElement("div");
   div.innerHTML = view;
-  body.insertAdjacentElement("afterbegin", div.firstElementChild);
+  app.insertAdjacentElement("afterbegin", div.firstElementChild);
 };
 
 const delSec = () => {

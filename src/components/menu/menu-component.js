@@ -2,8 +2,8 @@ import view from "./menu.html";
 import './menu.css'
 
 
+const container = document.querySelector('.app')
 const createHtml = () => {
-  const container = document.querySelector('.main-container')
   const div = document.createElement("div");
   div.innerHTML = view;
 
