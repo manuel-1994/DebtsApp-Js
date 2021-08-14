@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import "./styles.css";
+import './styles.css'
 import  {router} from './router/index.routes.js'
 import { DebtsList  } from "./classes";
 

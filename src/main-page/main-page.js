@@ -7,7 +7,7 @@ import { router } from "../router/index.routes";
 
 const app = document.querySelector(".app");
 const createHtml = () => {
-  /* app.innerHTML = ""; */
+  app.innerHTML = "";
   const div = document.createElement("div");
   div.innerHTML = view;
   app.insertAdjacentElement("afterbegin", div.firstElementChild);

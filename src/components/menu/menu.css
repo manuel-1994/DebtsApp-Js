@@ -1,19 +1,19 @@
 /* menu expandido */
 .menu{
-    background-color: red;
     width: 240px;
     position: fixed;
     z-index: 10;
     top: 0;
     bottom: 0;
     left: 0;
+   
 }
 
 .menu-nav-link, .menu-logo-content{
     display: flex;
     padding-left: 2rem;
     align-items: center;
-    color: #212529;
+    color: white;
 }
 
 /* logotipo */
@@ -42,8 +42,7 @@
 }
 
 .menu-nav-link:hover{
-    background-color: #212529;
-    color: white;
+    color: #d4d4d4;
 }
 
 .menu-text{
